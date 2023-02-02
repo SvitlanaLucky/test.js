@@ -59,12 +59,127 @@
 
 // 6
 
-const incomingValue = prompt('enter');
-const defaultValue = 10;
+// const incomingValue = prompt('enter');
+// const defaultValue = 10;
 
-const value = incomingValue || defaultValue;
+// const value = incomingValue || defaultValue;
 
-console.log(value);
+// console.log(value);
+
+
+// ----------------------- lessons 1.2 -----------------------
+
+// const x = Math.round(Math.random() * 100 + 1); // 1-100
+// let userInput;
+
+// do {
+//     userInput = Number(prompt('Enter a number (1-100)'));
+
+//     console.log(userInput);
+
+//     if (x > userInput) {
+//         console.log('x >', userInput);
+//     } else if (x < userInput) {
+//         console.log('x <', userInput);
+//     }
+// } while (x !== userInput);
+
+// console.log('You won!');
+
+
+// 1
+
+// const userInput = prompt('');
+
+// if (userInput === 'ECMAScript') {
+//     console.log('Hurray!');
+// } else {
+//     console.log('No :(');
+// }
+
+// 2
+
+// const hours = 14;
+// const minutes = 0;
+// let timestring;
+
+// if (minutes > 0) {
+//     timestring = `${hours} г. ${minutes} хв.`;
+// } else {
+//     timestring = `${hours} г.`;
+// }
+
+// console.log(timestring);
+
+
+// 4
+
+// const a = 120;
+// const b = 100;
+
+// if (a > 100 && b > 100) {
+//     // console.log(a > b ? a : b);
+//     console.log(Math.max(a, b));
+// } else {
+//     console.log(b + 512);
+// }
+
+
+// example 5
+
+// let link = 'https://my-site.com/about';
+
+// // if (!link.endsWith('/')) {
+//     if(link[link.length - 1] !== '/') {
+//     link += '/';
+// }
+
+// console.log(link);
+
+
+// example 7
+
+// let link = 'https://my-site.com/about';
+
+// link += !link.endsWith('/') ? '/' : '';
+// console.log(link);
+
+
+// example 10
+
+// const daysUntilDeadline = 1;
+
+// switch (daysUntilDeadline) {
+//     case 0:
+//         console.log('Today');
+//         break;
+    
+//     case 1:
+//         console.log('Tomorrow');
+//         break;
+    
+//     case 2:
+//         console.log('Olla');
+//         break;
+    
+//     default:
+//         console.log('Day in future');
+// }
+
+
+// example 11
+
+// const max = 100;
+// const min = 20;
+
+// for (let i = min; i <= max; i += 5) {
+//     if (i % 5 === 0) {
+//        console.log(i);
+//     }
+// }
+    
+
+
 
 
 
