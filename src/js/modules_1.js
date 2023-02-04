@@ -179,6 +179,40 @@
 // }
     
 
+// const age = 7;
+
+// console.log('Олексійкові', age, 'рочків');
+
+
+
+
+// const type = typeof('fgfggfg');  //показує тип
+// console.log(type);
+
+// console.log('До');
+// alert('sdsdsdds');
+// console.log('Після');
+
+// const loveSvitlana = confirm('Олексій, чи любиш ти Світлану');
+// console.log(loveSvitlana);
+
+
+// let quantity = prompt('Скільки років ви разом?');
+// quantity = Number(quantity);
+// console.log(quantity);
+// console.log(typeof quantity);
+
+// if (quantity === '7') {
+//     console.log(':)') ;
+// } else {
+//     console.log(':(') ;
+// }
+
+
+
+
+
+
 
 
 
