@@ -208,27 +208,60 @@
 //     console.log(':(') ;
 // }
 
+// const room = 7;
+// const welcome = 'gest ' + 'Svitlana ' + 'come ' + room;
+// console.log(welcome);
+
+// console.log(Number(null));
+
+// console.log(Boolean(-9));
+// console.log(Boolean(null));
+
+// const x1 = 10;
+// const x2 = 30;
+// const number = 25;
+
+// console.log(`Число ${number} попадє у відрізок до ${x1}?`, number < x1);
+// console.log(`Число ${number} попадє у відрізок до ${x1}?`, number > x2);
+// console.log(`Число ${number} попадє у відрізок від ${x1} до ${x2}?`, number > x1 && number < x2);
+// console.log(`Число ${number} попадє у відрізок до ${x1} від ${x2}?`, number < x1 || number > x2);
+
+
+// const isOnline = true;
+// const isFriend = true;
+// const isDnd = false;
+
+// const canOpenChat = isOnline && isFriend && !isDnd;
+// console.log('Можна відкрити чат? ', canOpenChat);
+
+
+// const sub = 'free';
+
+// const canAccessContent = sub === 'pro' || sub === 'vip';
+// console.log('Чи є доступ до контенту? ', canAccessContent);
+
+
+
+// const balance = -10;
+// let message;
+
+// if (balance > 0) {
+//     message = 'Cool!';
+// } else {
+//     message = ':(';
+// }
+
+// const message = balance >= 0 ? 'Cool!' : ':(';
+
+// console.log(message);
 
 
 
 
 
 
+ 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
