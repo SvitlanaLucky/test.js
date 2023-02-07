@@ -256,6 +256,127 @@
 // console.log(message);
 
 
+// --------------------- switch -----------------
+
+// const stars = 3;
+// let price;
+
+// if (stars === 1 || stars === 2) {
+//     price = 20;
+// } else if (stars === 3) {
+//     price = 40;
+// } else if (stars === 4) {
+//     price = 70;
+// } else if (stars === 5) {
+//     price = 120;
+// } else {
+//     console.log('Таких зірок нема')
+// }
+
+// switch (stars) {
+//     case 1:
+//     case 2:
+//         price = 20;
+//         console.log('хе хе')
+//         break;
+    
+//     case 3:
+//         price = 70;
+//         break;
+    
+//     case 4:
+//         price = 90;
+//         break;
+    
+//     case 5:
+//         price = 130;
+//         break;
+    
+//     default:
+//         console.log('Таких зірок нема');
+// }
+
+// console.log(price);
+
+
+// const option = 3;
+// let message = '';
+
+// switch (option) {
+//     case 1:
+//         message = 'Ви зможете забрати товар завтра';
+//         break;
+    
+//     case 2:
+//         message = 'Очікуйте дзвінок від курєра';
+//         break;
+    
+//     default:
+//         message = 'Вам передзвонить менеджер';
+// }
+// console.log(message);
+
+
+
+// ---------------- цикл for --------------------------
+
+// for (let i = 0; i <= 50; i += 3) {
+//     console.log(i);
+// }
+
+// console.log('hhhhh');
+
+// const employees = 4;
+// const minSalary = 500;
+// const maxSalary = 5000;
+// let totalSalary = 0;
+
+// for (let i = 1; i <= employees; i += 1) {
+//     const salary = Math.round(Math.random() * (maxSalary - minSalary) + minSalary);
+
+//     console.log(`ЗП працівник номер ${i} - ${salary}`);
+    
+//     totalSalary += salary;
+// }
+
+//   console.log('totalSalary ', totalSalary);
+
+
+// const min = 5;
+// const max = 10;
+// let total = 0;
+
+// for (let i = min; i <= max; i += 1) {
+//     console.log(i);
+//     if (i % 2 !== 0) {
+//         console.log('Не парне: ', i);
+//         continue;
+//     }
+
+//     console.log('Число парне: ', i);
+//     total += i;
+// }
+
+// console.log('total: ', total);
+
+
+
+// let balance = 100;
+// const payment = 2000;
+
+// console.log(`Загальна сума замовлення ${payment} кредитівю Перевіряємо доступну суму на рахунку`);
+
+// if (balance >= payment) {
+//     console.log('ok');
+
+//     balance -= payment;
+
+//     console.log(`Залишилось на рахунку ${balance}`);
+// } else {
+//     console.log('Нема грошей');
+// }
+
+// console.log('Операція завершена');
 
 
 
@@ -263,5 +384,3 @@
  
 
 
-
-    
