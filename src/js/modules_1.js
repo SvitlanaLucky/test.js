@@ -379,7 +379,30 @@
 // console.log('Операція завершена');
 
 
+// let totalSpent = 5900;
+// let payment = 500;
+// let discount = 0;
 
+// if (totalSpent >= 100 && totalSpent < 1000) {
+//     console.log('Бронзовий партнер, скидка 2%'); 
+//     discount = 0.02;
+// } else if (totalSpent >= 1000 && totalSpent < 5000) {
+//     console.log('Срібний партнер, скидка 5%');
+//     discount = 0.05;
+// } else if (totalSpent >= 5000) {
+//     console.log('Золотий партнер, скидка 10%');
+//     discount = 0.1;
+// } else {
+//     console.log('Не партнер, скидка 0%');
+// }
+
+// payment -= payment * discount;
+
+// console.log(`Оформлення замовлення на суму ${payment} зі скидкою ${discount * 100}%`);
+
+// totalSpent += payment;
+
+// console.log(`Загальна сума витрат в магазині ${totalSpent}`);
 
  
 
