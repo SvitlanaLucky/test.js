@@ -317,3 +317,149 @@
 
 // console.log(typeof myCity);
 
+
+// const btn = {
+//     width: 200,
+//     text: 'Hello',
+// };
+
+// const redBtn = {
+//     ...btn,
+//     color: 'red',
+// };
+
+// console.table(btn);
+// console.table(redBtn);
+
+
+// const btnInfo = {
+//     text: 'Hello',
+// };
+
+// const btnStyle = {
+//     text: 'Buy',
+//     color: 'yelow',
+//     width: 200,
+// };
+
+// const btn = {
+//     ...btnInfo,
+//     ...btnStyle,
+// };
+
+// console.table(btn);
+
+//---------------------------------------------------------------------------------------------------
+
+// const name = 'Alex';
+// const city = 'Kyiv';
+
+// const user = `Мене звати ${name}, я живу в ${city}`;
+
+// console.log(user);
+
+//------------------------------------------ функціональні вирази -------------------------------------------------
+
+// const myFn = function(a, b) {
+//     let c;
+//     a = a + 1;
+//     c = a + b;
+//     return c;
+// };
+
+// console.log(myFn(2, 3));
+
+
+// --------------------------------------  стрілочні функції ---------------------------------------------------------
+
+// const fn = (a, b) => {
+//     let c;
+//     a += 1;
+//     c = a + b;
+//     return c;
+// };
+
+// console.log(fn(2, 3));
+
+
+// function multByFactor(value, multiplier = 2) {
+//     return value * multiplier;
+// };
+
+// console.log(multByFactor(10, 2));
+// console.log(multByFactor(5));
+
+// -------------------------------------------------
+// const multByFactor = (value, multiplier) => {
+//     multiplier = 2;
+//     return value * multiplier;
+// };
+
+// console.log(multByFactor(10, 2));
+// console.log(multByFactor(5));
+
+//-------------------------------------------------------
+
+// const newPost = (post, addedAt = Date()) => ({
+//     ...post,
+//     addedAt: addedAt,
+// });
+
+// const firstPost = {
+//     id: 1,
+//     author: 'Sv',
+// };
+
+// console.log(newPost(firstPost));
+
+// ------------------------------------- помилки -------------------------------------------
+
+// const fnWithError = () => {
+//     throw new Error('hehehe');
+// };
+
+// try {
+//     fnWithError();
+// } catch (error) {
+//     console.error(error);
+//     console.log(error.message)
+// }
+
+// console.log('Continue...')
+
+// --------------------------------------- інструкції ;  ------------------------------------------------
+
+// let a;
+
+// const b = 5;
+
+// if (a > b) {
+//     console.log('a is larger');
+// }
+
+// for (let i = 0; i < 5; i += 1) {
+//     console.log('i =', i);
+// }
+
+
+// ------------------------------------------  масиви ----------------------------------------------------
+
+// const myArray = [1, 2]
+// myArray.length = 5;
+// console.log(myArray);
+
+// const myArray2 = new Array(1, true, 'Sv')
+// console.log(myArray2[2]);
+
+
+const myArray = [1, 2, 3, 4]
+console.table(myArray);
+console.log(myArray.length);
+
+myArray[2] = 'abc';
+
+console.table(myArray);
+console.log(myArray[2]);
+
+myArray[4] = true;
+console.table(myArray);
