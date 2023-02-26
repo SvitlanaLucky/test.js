@@ -452,14 +452,87 @@
 // console.log(myArray2[2]);
 
 
-const myArray = [1, 2, 3, 4]
-console.table(myArray);
-console.log(myArray.length);
+// const myArray = [1, 2, 3, 4]
+// console.table(myArray);
+// console.log(myArray.length);
 
-myArray[2] = 'abc';
+// myArray[2] = 'abc';
 
-console.table(myArray);
-console.log(myArray[2]);
+// console.table(myArray);
+// console.log(myArray[2]);
 
-myArray[4] = true;
-console.table(myArray);
+// myArray[4] = true;
+// console.table(myArray);
+
+//------------------------------------------------
+
+// const myArray4 = [1, 2, 3]
+// console.log(myArray4);
+
+// myArray4.push(6); //добавити елемент в кінець масиву
+
+// console.log(myArray4);
+
+// myArray4.pop(); //видалення елементу з кінця масиву
+// console.log(myArray4);
+
+// const removerElement = myArray4.pop();
+
+// console.log(myArray4);
+// console.log(removerElement);
+
+// myArray4.unshift(true); //добавляє елемент на початок масиву
+
+// myArray4.shift(); //видалення першого елементу масиву
+
+// myArray4.forEach(el => console.log(el * 2)); //перебирає всі елементи масиву
+
+// const newArray4 = myArray4.map((el) => { return el * 3 }); //перебирає і повертає новий масив
+// console.log(newArray4);
+
+
+// console.log(myArray4);
+
+
+//---------------------------------------------  деструктуризація --------------------------------------------------
+
+// const userProfile = {
+//     name: 'Sv',
+//     commentsQty: 23,
+//     hasSignedAgreement: false,
+// }
+
+// const { name, commentsQty } = userProfile;
+// const { hasSignedAgreement } = userProfile;
+
+// console.log(name);
+// console.log(commentsQty);
+// console.log(userProfile);
+
+
+// const fruits = ['Apple', 'Banana']
+
+// const [fruitOne, fruitTwo] = fruits
+
+// console.log(fruitOne);
+// console.log(fruitTwo);
+
+
+// const userProfile = {
+//     name: 'Sv',
+//     commentsQty: 0,
+//     hasSignedAgreement: false,
+// }
+
+// const userInfo = ({ name, commentsQty }) => {
+//     if (!commentsQty) {
+//         return `User ${name} has no comments`
+//     }
+//     return `User ${name} has ${commentsQty} comments`
+// }
+
+// console.log(userInfo(userProfile));
+
+
+//-----------------------------------  умовні інструкції -----------------------------------------------
+
