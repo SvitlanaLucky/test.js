@@ -384,7 +384,7 @@
 // let discount = 0;
 
 // if (totalSpent >= 100 && totalSpent < 1000) {
-//     console.log('Бронзовий партнер, скидка 2%'); 
+//     console.log('Бронзовий партнер, скидка 2%');
 //     discount = 0.02;
 // } else if (totalSpent >= 1000 && totalSpent < 5000) {
 //     console.log('Срібний партнер, скидка 5%');
@@ -405,5 +405,31 @@
 // console.log(`Загальна сума витрат в магазині ${totalSpent}`);
 
  
+
+//---------------------------------------- модулі ---------------------------------------------------
+
+// import {
+//     one,
+//     two,
+// } from './course.js'
+
+// console.log(one);
+// console.log(two);
+
+
+// import {
+//     one as newOne,
+//     two,
+// } from './course.js'
+
+// console.log(newOne);
+// console.log(two);
+
+
+// import { sum, mult as newMult } from './course.js';
+
+// console.log(sum(3, 2));
+// console.log(newMult(5, 6));
+
 
 

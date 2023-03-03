@@ -536,3 +536,204 @@
 
 //-----------------------------------  умовні інструкції -----------------------------------------------
 
+// let val = 10;
+
+// if (val > 5) {
+//     val += 20
+// }
+
+// console.log(val);
+
+
+// const person = {
+//     age: 18,
+// }
+
+// if (!person.name) {
+//     console.log('Імені немає')
+// }
+
+
+// let val = 10;
+
+// if (val < 5) {
+//     val +=20
+// } else {
+//     val -= 20
+// }
+
+// console.log(val);
+
+
+// const age = 16;
+
+// if (age > 18) {
+//     console.log('Is adult')
+// } else if (age >= 12) {
+//     console.log('Is teenager')
+// } else {
+//     console.log('Is child')
+// }
+
+
+// const sumPositiveNumbers = (a, b) => {
+//     if (typeof a !== 'number' || typeof b !== 'number') {
+//         return 'One of the arguments is not a number'
+//     }
+
+//     if (a <= 0 || b <= 0) {
+//         return 'Numbers are not positive'
+//     }
+
+//     return a + b
+// }
+
+// console.log(sumPositiveNumbers('a', 8));
+
+
+// const value = 11;
+
+// value ? console.log('True') : console.log('False')
+
+
+// let value = 1;
+
+// console.log(value >= 0 ? value : -value);
+
+//------------------------------------ цикли ------------------------------------------------
+
+// for (let i = 0; i < 5; i += 1) {
+//     console.log(i);
+// }
+
+
+// const myArray = ['first', 'second', 'third']
+
+// for (let i = 0; i < myArray.length; i += 1) {
+//     console.log(myArray[i]);
+// }
+
+
+// const myArray1 = ['first', 'second', 'third']
+
+// myArray1.forEach((element, index) => {
+//     console.log(element, index)
+// })
+
+
+// let i = 0;
+
+// while (i < 5) {
+//     console.log(i);
+//     i += 1;
+// }
+
+
+// let i = 10;
+
+// do {
+//     console.log(i);
+//     i += 1;
+// } while (i < 5);
+
+
+
+// const myObject = {
+//     x: 10,
+//     y: true,
+//     z: 'abc',
+// }
+
+// for (const key in myObject) {
+//     console.log(key, myObject[key])
+// }
+
+// const myObject = {
+//     x: 10,
+//     y: true,
+//     z: 'abc',
+// }
+
+// Object.keys(myObject).forEach(key => {
+//     console.log(key, myObject[key])
+// })
+
+
+// const myObject = {
+//     x: 10,
+//     y: true,
+//     z: 'abc',
+// }
+
+// Object.values(myObject).forEach(value => {
+//     console.log(value)
+// })
+
+
+// const myArray = [true, 10, 'abc', null]
+
+// for (const key in myArray) {
+//     console.log(myArray[key])
+// }
+
+
+// const myString = 'Hello'
+
+// for (const letter of myString) {
+//     console.log(letter)
+// }
+
+
+//--------------------------------------------  модулі ----------------------------------------------
+
+// const one = 2
+// const two = 'two'
+
+// export {
+//     one,
+//     two,
+// }
+
+// const sum = (a, b) => a + b;
+// const mult = (a, b) => a * b;
+
+// export { sum, mult }
+
+
+//------------------------------------- класи і прототипи ---------------------------------
+
+// class Comment {
+//     constructor(text) {
+//         this.text = text
+//         this.votesQty = 0
+//     }
+
+//     upvote() {
+//         this.votesQty += 1
+//     }
+// }
+
+// const firstComment = new Comment('First comment')
+
+// console.log(firstComment instanceof Comment);
+
+// firstComment.upvote()
+// console.log(firstComment.votesQty)
+
+
+class Comment {
+    constructor(text) {
+        this.text = text
+        this.votesQty = 0
+    }
+
+    upvote() {
+        this.votesQty += 1
+    }
+
+    static mergeComments(first, second) {
+        return `${first} ${second}`
+    }
+}
+
+console.log(Comment.mergeComments('First comment.', 'Second comment.'))
