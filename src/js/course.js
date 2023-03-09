@@ -721,19 +721,20 @@
 // console.log(firstComment.votesQty)
 
 
-class Comment {
-    constructor(text) {
-        this.text = text
-        this.votesQty = 0
-    }
+// class Comment {
+//     constructor(text) {
+//         this.text = text
+//         this.votesQty = 0
+//     }
 
-    upvote() {
-        this.votesQty += 1
-    }
+//     upvote() {
+//         this.votesQty += 1
+//     }
 
-    static mergeComments(first, second) {
-        return `${first} ${second}`
-    }
-}
+//     static mergeComments(first, second) {
+//         return `${first} ${second}`
+//     }
+// }
 
-console.log(Comment.mergeComments('First comment.', 'Second comment.'))
+// console.log(Comment.mergeComments('First comment.', 'Second comment.'))
+
