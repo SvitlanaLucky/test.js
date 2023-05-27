@@ -333,4 +333,77 @@
 
 //--------------------------------------------------------------------------------------------
 
+// const str = 'Hello world';
+// const arr = str.split(' ');
+// console.log(arr);
+
+// arr.reverse();
+// console.log(arr);
+
+// const result = arr.join(' ');
+// console.log(result);
+
+
+// const arr = ['hello', 'js', 1, 2, 3, 9, 'html'];
+
+// const ind = arr.indexOf('js');
+
+// const result = arr.splice(ind, 2, 'ccs');
+
+// console.log('arr', arr);
+// console.log('result', result);
+// ________________________________________________________________________________
+
+// const genres = ['Jass', 'Blues'];
+// genres.push('Rok-and-Roll');
+
+// console.log(genres[0]);
+// console.log(genres[genres.length - 1]);
+// console.log(genres.shift());
+// genres.unshift('Country', 'Reggae');
+
+// console.log(genres);
+// ______________________________________________________________________________
+
+// const values = '8 11';
+// const arr = values.split(' ');
+// const first = Number(arr[0]);
+// const last = Number(arr[arr.length - 1]);
+// const result = first * last;
+
+// console.log(result);
+// ____________________________________________________________________________
+
+// const string = 'Це любов';
+// const result = string.split('').reverse().join('');
+
+// console.log(result);
+// _____________________________________________________________________________
+
+// const langs = ['python', 'js', 'c++', 'haskel', 'php', 'ruby'];
+
+// for (let i = 0; i < langs.length; i += 1) {
+//     if (langs[0] > langs[i]) {
+//         const result = langs.splice(i, 1)[0];
+//         console.log(result);
+//         langs.unshift(result);
+//     };
+// };
+
+// console.log(langs);
+// _______________________________________________________________________________
+
+// const numbers = [45, 78, 43, 56, 87, -2, 13];
+// let min = numbers[0];
+
+// for (const value of numbers) {
+//     if (value < min) {
+//         min = value;
+//     };
+// };
+
+// console.log(min);
+// ____________________________________________________________________________________
+
+
 

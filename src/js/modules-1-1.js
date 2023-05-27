@@ -431,5 +431,67 @@
 // console.log(sum(3, 2));
 // console.log(newMult(5, 6));
 
+// _______________________________________________________________________________
+
+// undefined
+// null
+// 0
+// NaN
+// ''
+// false
+
+// console.log(!!'false');
+
+// console.log(Boolean(undefined));
+
+// ________________________________________________________________________________
+
+// const value = 34.5;
+
+// console.log(Math.ceil(value));
+// console.log(Math.floor(value));
+// console.log(Math.round(value));
+
+//___________________________________________________________________
+
+// const name = 'Sv';
+// const age = 28;
+
+// const result = name + ' ' + 'years' + ' ' + age;
+// console.log(result);
+// console.log(typeof result);
+
+// const c = 10 + 22 + '22' + 44;
+// console.log(typeof c);
+
+// const a = 2 * '3';
+// console.log(typeof a);
+
+// __________________________________________________________________
+
+// const name = 'Sv';
+// const age = 36;
+
+// console.log(`${name} years ${age}`);
+
+// ___________________________________________________________________
+
+// let weight = '88,3';
+// let height = '1.75';
+
+// weight = Number(weight.replace(',', '.'));
+// console.log(weight);
+
+// height = Number(height);
+
+// const bmi = Number((weight / Math.pow(height, 2)).toFixed(1));
+// console.log(bmi);
+
+
+// _____________________________________________________________________
+
+
+
+
 
 
