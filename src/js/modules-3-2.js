@@ -268,3 +268,217 @@
 
 // ______________________________________________________________________________
 
+const arr = [1, 2, 3];
+// const [one, , three] = arr;
+
+// console.log(one, three);
+// ________________________________________________________
+
+// const user = {
+//     name: 'Test',
+//     age: 11,
+//     skills: {
+//         html: true,
+//         css: true,
+//         js: false,
+//     },
+// };
+// const name = 'value';
+
+// const { age, name: userName } = user;
+
+// console.log(age);
+// console.log(name);
+// console.log(userName);
+// console.log(user);
+
+
+// const user = {
+//     name: 'Test',
+//     age: 11,
+//     skills: {
+//         html: true,
+//         css: true,
+//         js: false,
+//     },
+// };
+
+// const { name, skills: { js, css } } = user;
+
+// console.log(js, css);
+// ______________________________________________________________________________
+
+// const user = {
+//     name: 'Test',
+//     age: 11,
+//     skills: {
+//         html: true,
+//         css: true,
+//         js: false,
+//         cars: {
+//             audi: 'A6',
+//             bmw: 'x5',
+//         },
+//     },
+//     languages: [{html: true}, {css: false}],
+// };
+
+// for (const language of user.languages) {
+//     console.log(language);
+// };
+// ___________________________________________________________________
+
+// const users = [{
+//     name: 'User1', language: 'html',
+// }, {
+//     name: 'User2', language: 'css',
+// }, {
+//     name: 'User3', language: 'js',
+//     }]
+
+// for (const { name } of users) {
+//     console.log(name);
+// };
+// _____________________________________________________________
+
+// const propName = 'name';
+
+// const user = {
+//     age: 25,
+//     [propName]: 'Anna',
+// };
+
+// console.log(user.name);
+
+
+// const emailInputName = 'email';
+// const passwordInputName = 'password';
+
+// const credentials = {
+//     [emailInputName]: 'henry.carter@aptmail.com',
+//     [passwordInputName]: 'jqueryismyjam',
+// };
+
+// console.log(credentials.email);
+// console.log(credentials.password);
+// _______________________________________________________________________________
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+
+// const keys = [];
+// const values = [];
+
+// for (const key in apartment) {
+//     keys.push(key);
+//     values.push(apartment[key]);
+// };
+
+// console.log(keys);
+// console.log(values);
+// _______________________________________________________________________________
+
+// function calcBMI({ weight, height }) {
+//     const numericWeight = Number(weight.replace(',', '.'));
+//     const numericHeight = Number(height.replace(',', '.'));
+    
+//     return Number((numericWeight / numericHeight ** 2).toFixed(1));
+// };
+
+// console.log(calcBMI({ weight: '88,3', height: '1.74' }));
+// _____________________________________________________________________________
+
+// function transformUsername({ firstName, lastName, ...props }) {
+//     return {
+//         fullName: `${firstName} ${lastName}`,
+//         ...props,
+//     };
+// };
+
+// console.log(transformUsername({
+//     id: 1,
+//     firstName: 'Jacob',
+//     lastName: 'Marcer',
+//     email: 'j.m@mail.ccom',
+//     friendCount: 40,
+// }),);
+
+// console.log(transformUsername({
+//     id: 2,
+//     firstName: 'Adrian',
+//     lastName: 'Cross',
+//     email: 'a.c@mail.ccom',
+//     friendCount: 20,
+// }),);
+// _______________________________________________________________________________
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const values = [];
+
+// const keys = Object.keys(apartment);
+
+// for (const key of keys) {
+//     values.push(apartment[key]);
+// };
+
+// console.log(keys);
+// console.log(values);
+// __________________________________________________________________
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+
+// const keys = Object.keys(apartment);
+// const values = Object.values(apartment);
+
+// console.log(values);
+// __________________________________________________________________________
+
+
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+
+// for (const color of colors) {
+//     console.log(hexColors.push(color.hex));
+//     console.log(rgbColors.push(color.rgb));
+// };
+
+// console.log(hexColors);
+// console.log(rgbColors);
+// ____________________________________________________________
+
+const products = [
+  { name: "Radar", price: 1300, quantity: 4 },
+  { name: "Scanner", price: 2700, quantity: 3 },
+  { name: "Droid", price: 400, quantity: 7 },
+  { name: "Grip", price: 1200, quantity: 9 },
+];
+
+function getProductPrice(productName) {
+    for (const product of products) {
+        if (product.name === productName) {
+            return product.quantity;
+        };
+    };
+    return null;
+};
+
+console.log(getProductPrice("Grip"));
+

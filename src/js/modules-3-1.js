@@ -109,7 +109,111 @@
 
 // _____________________________________________________________________________
 
+// const user = {
+//     name: 'Sv',
+//     age: 36,
+//     languages: {
+//         html: false,
+//         css: false,
+//         js: true,
+//     },
+// };
+// delete user.languages.css;
 
+// // Object.freeze(user);
+// user.age = 100;
     
+// console.log(user);
+
+
+// if ('city' in user) {
+//     console.log('yes')
+// } else {
+//     console.log('no')
+// };
+// ___________________________________________________________________________________
+
+
+// const Transaction = {
+//     DEPOSIT: 'deposit',
+//     WITHDRAW: 'withdraw',
+// };
+
+// Object.freeze(Transaction);
+
+// const account = {
+//     balance: 0,
+//     transactions: [{ id: 16, amount: 145, type: 'deposit' },],
+//     createTransaction(amount, type) {
+//         return {
+//             id: Date.now(),
+//             amount,
+//             type,
+//         }
+//     },
+//     deposit(amount) {
+//         if (amount <= 0) {
+//             return 'Error';
+//         };
+//         const item = this.createTransaction(amount, Transaction.DEPOSIT);
+//         this.balance += amount;
+//         this.transactions.push(item);
+//         return item;
+//     },
+//     withdraw(amount) {
+//         if (amount > this.balance || amount <= 0) {
+//             return 'недостатньо коштів';
+//         };
+
+//         const item = this.createTransaction(amount, Transaction.WITHDRAW);
+//         this.transactions.push(item);
+//         this.balance -= amount;
+//         return item;
+//     },
+//     getBalance() {
+//         return this.balance;
+//     },
+//     getTransactionDetails(id) {
+//         for (const transaction of this.transactions) {
+//             if (transaction.id === id) {
+//                 return transaction;
+//             };
+//             return 'Empty';
+//         };
+//     },
+//     getTransactionTotal(type) {
+//         let sum = 0;
+//         for (const transaction of this.transactions) {
+//             if (transaction.type === type) {
+//                 sum += transaction.amount;
+//             };
+//         };
+//         return sum;
+//     },
+// };
+
+// console.log(account.deposit(110));
+// console.log(account.deposit(1000));
+// console.log(account.transactions);
+// console.log(account.withdraw(30));
+// console.log(account.getBalance());
+// console.log(account.getTransactionDetails(18));
+// console.log(account.getTransactionTotal(Transaction.WITHDRAW));
+// console.log(account);
+// __________________________________________________________________________________________
+
+// const user = {
+//     email: 'mango@mail.com',
+//     age: 20,
+// };
+
+// const { email: userEmail } = user;
+// console.log(user);
+// ______________________________________________________________
+
+// 
+
+
+
 
 
