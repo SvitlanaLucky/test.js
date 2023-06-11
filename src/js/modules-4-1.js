@@ -67,9 +67,22 @@
 // console.log(message('Ann'));
 // ______________________________________________________________________
 
+// const numbers = [5, 7, 9, 34, 56];
 
+<<<<<<< HEAD
 // const message = addWords => `Hello my boyfriend ${addWords}`;
 
 // console.log(message('Sv'));
 // _________________________________________________________________
+=======
+// const doubledNums = numbers.map(function (number) {
+//     console.log(number);
+
+//     return number * 2;
+// });
+
+// console.log('numbers', numbers);
+// console.log('doubledNums', doubledNums);
+// ___________________________________________________________________________________
+>>>>>>> d44de1870555ae2881b8f5bcc43de3c6314eabac
 
