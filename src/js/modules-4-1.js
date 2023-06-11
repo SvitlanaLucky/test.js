@@ -68,7 +68,8 @@
 // ______________________________________________________________________
 
 
-const message = addWords => `Hello my boyfriend ${addWords}`;
+// const message = addWords => `Hello my boyfriend ${addWords}`;
 
-console.log(message('Sv'));
+// console.log(message('Sv'));
 // _________________________________________________________________
+
