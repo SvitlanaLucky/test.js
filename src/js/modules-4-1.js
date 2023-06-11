@@ -67,4 +67,15 @@
 // console.log(message('Ann'));
 // ______________________________________________________________________
 
- 
+// const numbers = [5, 7, 9, 34, 56];
+
+// const doubledNums = numbers.map(function (number) {
+//     console.log(number);
+
+//     return number * 2;
+// });
+
+// console.log('numbers', numbers);
+// console.log('doubledNums', doubledNums);
+// ___________________________________________________________________________________
+
