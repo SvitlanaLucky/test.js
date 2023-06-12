@@ -73,9 +73,7 @@
 
 // console.log('Total: ', cart.countTotalPrice());
 
-
 // ______________________________________________________________________________________________
-
 
 // const playlist = {
 //     name: 'my',
@@ -98,7 +96,6 @@
 // const { name, tag, location } = profile;
 
 // console.log(name, tag, location);
-
 
 // const rgb = [255, 67, 100];
 // const [red, , blue] = rgb;
@@ -133,7 +130,7 @@
 //         location = 'Planet',
 //         stats: { followers, views, likes },
 //     } = userProfile;
-    
+
 //     return `<div>
 //         <img src="${avatar}" alt="user avatar">
 //         <p>${name}<span>@${tag}</span></p>
@@ -154,7 +151,6 @@
 
 // ________________________________________________________________________________
 
-
 // function cutUserData({ birthDate, phone, ...rest }) {
 //     const newUser = { ...rest };
 
@@ -170,7 +166,6 @@
 
 // _______________________________________________________________________
 
-
 // const products = [
 //     { name: 'Sv', price: 1300, quantity: 4 },
 //     { name: 'Ol', price: 300, quantity: 7 },
@@ -179,7 +174,7 @@
 
 // function getAllPropValues(propName) {
 //     const arrayAllPropValues = [];
-    
+
 //     for (const product of products) {
 //         if (product[propName])
 //             arrayAllPropValues.push(product[propName]);
@@ -207,7 +202,6 @@
 
 // _____________________________________________________________________________
 
-
 // const findLongestWord = string => {
 //     const arrayWords = string.split(' ');
 
@@ -231,7 +225,6 @@
 // _______________________________________________________________________________
 
 // const colors = ['blue', 'yellow', 'olive', 'lime'];
-
 
 // const findTheColor = function (color) {
 //     if (colors.includes(color)) {
@@ -257,7 +250,7 @@
 // const removeCourse = function (name) {
 //     const index = courses.indexOf(name);
 //     courses.splice();
-    
+
 //     console.log(index)
 // };
 
@@ -291,7 +284,6 @@ const arr = [1, 2, 3];
 // console.log(name);
 // console.log(userName);
 // console.log(user);
-
 
 // const user = {
 //     name: 'Test',
@@ -350,7 +342,6 @@ const arr = [1, 2, 3];
 
 // console.log(user.name);
 
-
 // const emailInputName = 'email';
 // const passwordInputName = 'password';
 
@@ -384,7 +375,7 @@ const arr = [1, 2, 3];
 // function calcBMI({ weight, height }) {
 //     const numericWeight = Number(weight.replace(',', '.'));
 //     const numericHeight = Number(height.replace(',', '.'));
-    
+
 //     return Number((numericWeight / numericHeight ** 2).toFixed(1));
 // };
 
@@ -444,7 +435,6 @@ const arr = [1, 2, 3];
 // console.log(values);
 // __________________________________________________________________________
 
-
 // const colors = [
 //   { hex: "#f44336", rgb: "244,67,54" },
 //   { hex: "#2196f3", rgb: "33,150,243" },
@@ -464,21 +454,63 @@ const arr = [1, 2, 3];
 // console.log(rgbColors);
 // ____________________________________________________________
 
-const products = [
-  { name: "Radar", price: 1300, quantity: 4 },
-  { name: "Scanner", price: 2700, quantity: 3 },
-  { name: "Droid", price: 400, quantity: 7 },
-  { name: "Grip", price: 1200, quantity: 9 },
-];
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
 
-function getProductPrice(productName) {
-    for (const product of products) {
-        if (product.name === productName) {
-            return product.quantity;
-        };
-    };
-    return null;
-};
+// function getProductPrice(productName) {
+//     for (const product of products) {
+//         if (product.name === productName) {
+//             return product.quantity;
+//         };
+//     };
+//     return null;
+// };
 
-console.log(getProductPrice("Grip"));
+// console.log(getProductPrice("Grip"));
+// ____________________________________________________________________
+// const products = [
+//   {
+//     name: 'Radar',
+//     price: 1300,
+//     quantity: 4,
+//   },
+//   {
+//     name: 'Scanner',
+//     price: 2700,
+//     quantity: 3,
+//   },
+//   {
+//     name: 'Droid',
+//     price: 400,
+//     quantity: 7,
+//   },
+//   {
+//     name: 'Grip',
+//     price: 1200,
+//     quantity: 9,
+//   },
+// ];
 
+// function calculateTotalPrice(
+//   productName
+// ) {
+//   let result = 0;
+
+//   for (const product of products) {
+//     if (productName === product.name) {
+//       result =
+//         product.price *
+//         product.quantity;
+//     }
+//   }
+//   return result;
+// }
+
+// console.log(
+//   calculateTotalPrice('Radar')
+// );
+// ______________________________________________________________________

@@ -38,9 +38,6 @@
 // console.log(filter([1, 2, 3, 4, 5], callback1));
 // console.log(filter([1, 2, 3, 4, 5,6,7,8]));
 
-
-
-
 // const fruits = [
 //     { name: 'apples', quantity: 200, isFresh: true, },
 //     { name: 'grapes', quantity: 150, isFresh: false, },
@@ -69,13 +66,52 @@
 
 // const numbers = [5, 7, 9, 34, 56];
 
-// const doubledNums = numbers.map(function (number) {
+// const doubledNums = numbers.map(
+//   function (number) {
 //     console.log(number);
 
 //     return number * 2;
-// });
+//   });
 
 // console.log('numbers', numbers);
 // console.log('doubledNums', doubledNums);
 // ___________________________________________________________________________________
 
+// const numbers = [5, 7, 8, 23, 45];
+
+// const filteredNumbers = numbers.filter(
+//   (number) => {
+//     console.log(number);
+//     return number >= 7;
+//   }
+// );
+
+// console.log(filteredNumbers);
+// __________________________________________________________________________
+
+// const numbers = [89, 67, 34, 54, 76];
+
+// const total = numbers.reduce(
+//   (acc, number) => {
+//     return acc + number;
+//   },
+//   0
+// );
+
+// console.log(total);
+// ___________________________________________________________________________
+
+// const salary = {
+//   mango: 100,
+//   poly: 50,
+//   ajax: 150,
+// };
+
+// const totalSalary = Object.values(
+//   salary
+// ).reduce((total, value) => {
+//   return total + value;
+// }, 0);
+
+// console.log(totalSalary);
+// _______________________________________________________________________________
