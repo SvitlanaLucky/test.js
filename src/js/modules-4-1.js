@@ -64,6 +64,11 @@
 // console.log(message('Ann'));
 // ______________________________________________________________________
 
+// const message = addWords => `Hello my boyfriend ${addWords}`;
+
+// console.log(message('Sv'));
+// _________________________________________________________________
+
 // const numbers = [5, 7, 9, 34, 56];
 
 // const doubledNums = numbers.map(
@@ -76,42 +81,3 @@
 // console.log('numbers', numbers);
 // console.log('doubledNums', doubledNums);
 // ___________________________________________________________________________________
-
-// const numbers = [5, 7, 8, 23, 45];
-
-// const filteredNumbers = numbers.filter(
-//   (number) => {
-//     console.log(number);
-//     return number >= 7;
-//   }
-// );
-
-// console.log(filteredNumbers);
-// __________________________________________________________________________
-
-// const numbers = [89, 67, 34, 54, 76];
-
-// const total = numbers.reduce(
-//   (acc, number) => {
-//     return acc + number;
-//   },
-//   0
-// );
-
-// console.log(total);
-// ___________________________________________________________________________
-
-// const salary = {
-//   mango: 100,
-//   poly: 50,
-//   ajax: 150,
-// };
-
-// const totalSalary = Object.values(
-//   salary
-// ).reduce((total, value) => {
-//   return total + value;
-// }, 0);
-
-// console.log(totalSalary);
-// _______________________________________________________________________________
