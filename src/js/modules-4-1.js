@@ -132,3 +132,5 @@ const newAdd = [
 console.log(add);
 console.log(newAdd);
 console.log(`hello`);
+
+console.log(`Hello Alex`);
