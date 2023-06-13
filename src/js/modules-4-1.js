@@ -80,7 +80,6 @@
 
 // console.log('numbers', numbers);
 // console.log('doubledNums', doubledNums);
-<<<<<<< Updated upstream
 // ___________________________________________________________________________________
 
 // const numbers = [5, 7, 8, 23, 45];
@@ -121,8 +120,14 @@
 
 // console.log(totalSalary);
 // _______________________________________________________________________________
-=======
-// __________________________________________________________________________________
 
+const add = [1, 2, 3, 4];
+const newAdd = [
+  {
+    name: 'Alex',
+    age: 28,
+  },
+];
 
->>>>>>> Stashed changes
+console.log(add);
+console.log(newAdd);
