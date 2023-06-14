@@ -121,16 +121,62 @@
 // console.log(totalSalary);
 // _______________________________________________________________________________
 
-const add = [1, 2, 3, 4];
-const newAdd = [
-  {
-    name: 'Alex',
-    age: 28,
-  },
-];
+// const add = [1, 2, 3, 4];
+// const newAdd = [
+//   {
+//     name: 'Alex',
+//     age: 28,
+//   },
+// ];
 
-console.log(add);
-console.log(newAdd);
-console.log(`hello`);
+// console.log(add);
+// console.log(newAdd);
+// console.log(`hello`);
 
-console.log(`Hello Alex`);
+// console.log(`Hello Alex`);
+// _________________________________________________________________________________
+
+// const numbers = [1, 7, 45, 3, 89];
+// const copy = [...numbers];
+
+// console.log('numbers:', numbers);
+// console.log('copy:', copy);
+
+// copy.sort((curEl, nextEl) => {
+//   return curEl - nextEl;
+// });
+
+// console.log(copy);
+
+// copy.sort((curEl, nextEl) => {
+//   return nextEl - curEl;
+// });
+
+// console.log(copy);
+// console.log('numbers:', numbers);
+// __________________________________________________________________________
+
+// const array = [
+//   1,
+//   2,
+//   [4, [5]],
+//   [6, [7, 8, [9]]],
+// ];
+// console.log(array);
+// console.log(array.flat(3));
+// _________________________________________________________________
+
+// const numbers = [1, 5, 3, 66, 45];
+
+// const newNumber = numbers
+//   .filter((num) => num > 10)
+//   .map((num) => num * 3)
+//   .sort((a, b) => b - a);
+
+// console.log(newNumber);
+
+// const greaterThenTwo = numbers.filter(
+//   (num) => num > 10
+// );
+// console.log(greaterThenTwo);
+// ________________________________________________________________________________
