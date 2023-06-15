@@ -180,3 +180,45 @@
 // );
 // console.log(greaterThenTwo);
 // ________________________________________________________________________________
+
+// const arr = [1, 2, 5, 3, 9, 6];
+
+// const result = arr.map((item) => {
+//   if (!(item % 2)) {
+//     return item * 2;
+//   }
+//   return item;
+// });
+
+// console.log(result);
+// ____________________________________________________________________
+// const arr = [1, 2, 5, 3, 9, 6];
+
+// function customMap(arr, callback) {
+//   const result = [];
+//   for (
+//     let i = 0;
+//     i < arr.length;
+//     i += 1
+//   ) {
+//     const item = arr[i];
+//     result.push(callback(item, i, arr));
+//   }
+//   return result;
+// }
+
+// console.log(customMap(arr, foo));
+
+// function foo(item, idx, arr) {
+//   if (!(item % 2)) {
+//     return item * 2;
+//   }
+//   return item;
+// }
+
+// const result = arr.map((item) =>
+//   !(item % 2) ? item * 2 : item
+// );
+
+// console.log(result);
+// __________________________________________________________________
