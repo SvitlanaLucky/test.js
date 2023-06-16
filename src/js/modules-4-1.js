@@ -217,8 +217,49 @@
 // }
 
 // const result = arr.map((item) =>
-//   !(item % 2) ? item * 2 : item
+//   (!(item % 2)) ? item * 2 : item
 // );
 
 // console.log(result);
 // __________________________________________________________________
+
+// const arr = [1, 2, 5, 3, 9, 6];
+
+// function each(arr, callback) {
+//   let total = arr[0];
+//   for (
+//     let i = 1;
+//     i < arr.length;
+//     i += 1
+//   ) {
+//     total = callback(total, arr[i]);
+//   }
+//   return total;
+// }
+
+// console.log(each(arr, add));
+// console.log(each(arr, sum));
+// console.log(each(arr, division));
+
+// function add(first, second) {
+//   return first + second;
+// }
+
+// function sum(first, second) {
+//   return first * second;
+// }
+
+// function division(first, second) {
+//   return first / second;
+// }
+// __________________________________________________________________________
+
+// const arr = [1, 2, 5, 3, 9, 6];
+// const num = 8;
+
+// arr.forEach(function (item, idx, arr) {
+//   arr[idx] = item * num;
+// });
+
+// console.log(arr);
+// _______________________________________________________________________
