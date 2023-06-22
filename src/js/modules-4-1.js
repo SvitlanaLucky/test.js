@@ -253,3 +253,18 @@
 //   return first / second;
 // }
 // __________________________________________________________________________
+
+// const numbers = [1, 5, 4, 3, 7];
+
+// const x2 = (number) => number * 2;
+
+// const map = (items, callback) => {
+//   const result = [];
+//   for (const item of items) {
+//     result.push(callback(item));
+//   }
+//   return result;
+// };
+
+// console.log(map(numbers, x2));
+// _________________________________________________________________________
