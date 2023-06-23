@@ -268,3 +268,59 @@
 
 // console.log(map(numbers, x2));
 // _________________________________________________________________________
+
+// const calculateAverage = (...args) => {
+//   let total = 0;
+
+//   args.forEach(
+//     (item) => (total += item)
+//   );
+
+//   return total / args.length;
+// };
+
+// console.log(
+//   calculateAverage(1, 4, 5, 6)
+// );
+// ____________________________________________________________________________
+
+// function Counter(x = 0) {
+//   return function () {
+//     console.log((x += 1));
+//   };
+// }
+
+// const counter1 = Counter(10);
+// const counter2 = Counter(40);
+
+// counter1();
+// counter1();
+
+// counter2();
+// counter2();
+// _____________________________________________________________________
+
+// const str = 'Олексій Світлана'.split(
+//   ''
+// );
+
+// // const res = {};
+
+// // for (const letter of str) {
+// //   res[letter] = res[letter]
+// //     ? res[letter] + 1
+// //     : 1;
+// // }
+
+// const res = str.reduce(
+//   (res, letter) => {
+//     res[letter] = res[letter]
+//       ? res[letter] + 1
+//       : 1;
+
+//     return res;
+//   },
+//   {}
+// );
+// console.table(res);
+// _____________________________________________________________________
