@@ -20,11 +20,9 @@
 //     console.log(book[key]);
 // };
 
-
 // console.log(book);
 // console.log(book.title);
 // console.log(book.genres.one);
-
 
 // const title = 'love';
 
@@ -34,7 +32,6 @@
 
 // console.log(book);
 // ________________________________________________________________________________________________________
-
 
 // const friends = [
 //     { name: 'Mango', online: false },
@@ -62,7 +59,6 @@
 // console.log(findFriendByName(friends, 'Poly'));
 
 // ____________________________________________________________________________________
-
 
 // const user = {
 //     name: 'Mango',
@@ -95,7 +91,7 @@
 // function calcTotalPrice(stones, stoneName) {
 //     for (const stone of stones) {
 //         const { name, price, quantity } = stone;
-        
+
 //         if (name === stoneName) {
 //             return price * quantity;
 //         };
@@ -122,9 +118,8 @@
 
 // // Object.freeze(user);
 // user.age = 100;
-    
-// console.log(user);
 
+// console.log(user);
 
 // if ('city' in user) {
 //     console.log('yes')
@@ -132,7 +127,6 @@
 //     console.log('no')
 // };
 // ___________________________________________________________________________________
-
 
 // const Transaction = {
 //     DEPOSIT: 'deposit',
@@ -211,9 +205,219 @@
 // console.log(user);
 // ______________________________________________________________
 
-// 
+// const colors = [
+//   { hex: '#f44336', rgb: '244,67,54' },
+//   { hex: '#2196f3', rgb: '33,150,243' },
+//   { hex: '#4caf50', rgb: '76,175,80' },
+//   { hex: '#ffeb3b', rgb: '255,235,59' },
+// ];
 
+// const hexColors = [];
+// const rgbColors = [];
 
+// for (const { hex, rgb } of colors) {
+//   hexColors.push(hex);
+//   rgbColors.push(rgb);
+// }
+// ___________________________________________________________________________
 
+// const scores = [
+//   89, 64, 42, 17, 93, 51, 26,
+// ];
 
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
 
+// console.log(bestScore);
+// console.log(worstScore);
+// __________________________________________________________________________
+
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [
+//   89, 14, 51, 26,
+// ];
+// const thirdGroupScores = [
+//   29, 47, 18, 97, 81,
+// ];
+
+// const allScores = [
+//   ...firstGroupScores,
+//   ...secondGroupScores,
+//   ...thirdGroupScores,
+// ];
+// const bestScore = Math.max(
+//   ...allScores
+// );
+// const worstScore = Math.min(
+//   ...allScores
+// );
+
+// console.log(allScores);
+// console.log(bestScore);
+// console.log(worstScore);
+// _________________________________________________________________________
+
+// const defaultSettings = {
+//   theme: 'light',
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+
+// const finalSettings = {
+//   ...defaultSettings,
+//   ...overrideSettings,
+// };
+
+// console.log(finalSettings);
+//________________________________________________________________________
+
+// function makeTask(data) {
+//   const completed = false;
+//   const category = 'General';
+//   const priority = 'Normal';
+
+//   return {
+//     completed,
+//     category,
+//     priority,
+//     ...data,
+//   };
+// }
+
+// console.log(
+//   makeTask({
+//     text: 'Take out the trash',
+//   })
+// );
+// ___________________________________________________________________
+
+// const bookShelf = {
+//   books: [
+//     'The last kingdom',
+//     'The guardian of dreams',
+//   ],
+//   getBooks() {
+//     return 'Returning all books';
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(bookName) {
+//     return `Deleting book ${bookName}`;
+//   },
+//   updateBook(oldName, newName) {
+//     return `Updating book ${oldName} to ${newName}`;
+//   },
+// };
+// _________________________________________________________________________
+
+// const bookShelf = {
+//   books: [
+//     'The last kingdom',
+//     'Haze',
+//     'The guardian of dreams',
+//   ],
+//   updateBook(oldName, newName) {
+
+//     const bookIndex =
+//       this.books.indexOf(oldName);
+
+//     this.books.splice(
+//       bookIndex,
+//       1,
+//       newName
+//     );
+//   },
+// };
+// __________________________________________________________________________
+
+// const atTheOldToad = {
+//   potions: [],
+//   getPotions() {
+//     return this.potions;
+//   },
+// };
+// ______________________________________________________________________
+
+// const atTheOldToad = {
+//   potions: [
+//     'Speed potion',
+//     'Dragon breath',
+//     'Stone skin',
+//   ],
+//   removePotion(potionName) {
+//     const potionIndex =
+//       this.potions.indexOf(potionName);
+//     this.potions.splice(potionIndex, 1);
+//   },
+// };
+// _______________________________________________________________________
+
+// const atTheOldToad = {
+//   potions: [
+//     {
+//       name: 'Speed potion',
+//       price: 460,
+//     },
+//     {
+//       name: 'Dragon breath',
+//       price: 780,
+//     },
+//     { name: 'Stone skin', price: 520 },
+//   ],
+
+//   getPotions() {
+//     return this.potions;
+//   },
+
+//   addPotion(newPotion) {
+//     for (const potion of this.potions) {
+//       if (
+//         potion.name === newPotion.name
+//       ) {
+//         return `Error! Potion ${newPotion.name} is already in your inventory!`;
+//       }
+//     }
+
+//     this.potions.push(newPotion);
+//     return this.potions;
+//   },
+
+//   removePotion(potionName) {
+//     for (
+//       let i = 0;
+//       i < this.potions.length;
+//       i += 1
+//     ) {
+//       if (
+//         this.potions[i].name ===
+//         potionName
+//       ) {
+//         return this.potions.splice(
+//           [i],
+//           1
+//         );
+//       }
+//     }
+
+//     return `Potion ${potionName} is not in inventory!`;
+//   },
+
+//   updatePotionName(oldName, newName) {
+//     for (let potion of this.potions) {
+//       if (potion.name === oldName) {
+//         return (potion.name = newName);
+//       }
+//     }
+
+//     return `Potion ${oldName} is not in inventory!`;
+//   },
+// };
+// ______________________________________________________________________
