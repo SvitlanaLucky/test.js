@@ -165,3 +165,54 @@ const cars = [
 
 // console.log(result);
 // _________________________________________________________________________
+// замикання..................
+
+// function createIncrementor(n) {
+//   return function (num) {
+//     return n + num;
+//   };
+// }
+
+// const addOne = createIncrementor(1);
+// const addTen = createIncrementor(10);
+
+// console.log(addOne(10));
+// console.log(addOne(43));
+
+// console.log(addTen(20));
+// console.log(addTen(32));
+// ________________________________________________________________________
+
+// const getMessage = (text, name) =>
+//   `${text}, ${name}, я тебе люблю`;
+
+// console.log(
+//   getMessage('мій коханй', 'Олексій')
+// );
+// console.log(
+//   getMessage('коник', 'бетмен')
+// );
+
+// function getMessage(text, name) {
+//   console.log(`${text}, ${name}!`);
+// }
+// setTimeout(
+//   getMessage,
+//   4000,
+//   'мій коханй',
+//   'Олексій'
+// );
+// __________________________________________________________________________
+
+// const myArr = [3, 5, 6, 7, 45, 5, 32];
+
+// let value;
+
+// value = myArr.length;
+// myArr[4] = 4;
+
+// value = myArr.indexOf(5);
+// value = myArr.push(100);
+
+// console.log(value, myArr);
+// ___________________________________________________________________
