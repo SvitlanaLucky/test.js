@@ -324,3 +324,32 @@
 // );
 // console.table(res);
 // _____________________________________________________________________
+
+// const calculateTotalPrice = (
+//   orderedItems
+// ) => {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach((item, i) => {
+//     totalPrice += item;
+//   });
+//   return totalPrice;
+// };
+
+// console.log(
+//   calculateTotalPrice([1, 0, 2])
+// );
+// ______________________________________________________
+
+function changeEven(numbers, value) {
+  const newNumbers = [];
+
+  numbers.forEach((element) => {
+    if (element % 2 === 0) {
+      newNumbers.push(element + value);
+    } else {
+      newNumbers.push(element);
+    }
+  });
+  return newNumbers;
+}

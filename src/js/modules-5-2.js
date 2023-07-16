@@ -200,44 +200,108 @@ console.log('❤️');
 // // console.log('test1:', test1);
 // ____________________________________________________________________________________
 
-class User {
-  constructor({
-    name,
-    age,
-    location,
-    email,
-  } = {}) {
-    this.name = name;
-    this.age = age;
-    this.location = location;
-    this.email = email;
-  }
-}
+// class User {
+//   constructor({
+//     name,
+//     age,
+//     location,
+//     email,
+//   } = {}) {
+//     this.name = name;
+//     this.age = age;
+//     this.location = location;
+//     this.email = email;
+//   }
+// }
 
-class Avatar extends User {
-  constructor({
-    name,
-    age,
-    location,
-    email,
-    damage,
-  }) {
-    super({
-      name,
-      age,
-      location,
-      email,
-    });
-    this.damage = damage;
-  }
-}
+// class Avatar extends User {
+//   constructor({
+//     name,
+//     age,
+//     location,
+//     email,
+//     damage,
+//   }) {
+//     super({
+//       name,
+//       age,
+//       location,
+//       email,
+//     });
+//     this.damage = damage;
+//   }
+// }
 
-const test = new Avatar({
-  name: 'A',
-  age: 100,
-  location: 'Hata',
-  email: 'Avatar@gmail.com',
-  damage: 450,
-});
+// const test = new Avatar({
+//   name: 'A',
+//   age: 100,
+//   location: 'Hata',
+//   email: 'Avatar@gmail.com',
+//   damage: 450,
+// });
 
-console.log(test);
+// console.log(test);
+// ___________________________________________________________
+
+// class Admin {
+//   constructor({
+//     name,
+//     age,
+//     location,
+//     level,
+//   } = {}) {
+//     this.name = name;
+//     this.age = age;
+//     this.location = location;
+//     this.level = level;
+//   }
+// }
+
+// class Alex extends Admin {
+//   constructor({
+//     name,
+//     age,
+//     location,
+//     level,
+//   }) {
+//     super({
+//       name,
+//       age,
+//       location,
+//       level,
+//     });
+//   }
+// }
+
+// const userAlex = new Alex({
+//   name: 'Alex',
+//   age: 29,
+//   location: 'Ukraine',
+//   level: 11,
+// });
+
+// class Svitlana extends Admin {
+//   constructor({
+//     name,
+//     age,
+//     location,
+//     level,
+//     eyes,
+//   }) {
+//     super({ name, age, location });
+//     this.level = level;
+//     this.eyes = eyes;
+//   }
+// }
+
+// const userSv = new Svitlana({
+//   name: 'Svitlana',
+//   age: 18 + 18,
+//   location: 'Ukraine',
+//   level: 10,
+//   eyes: 'green',
+// });
+
+// console.table(userAlex);
+// console.table(userSv);
+// ___________________________________________________________
