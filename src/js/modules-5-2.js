@@ -241,6 +241,37 @@ console.log('❤️');
 // });
 
 // console.log(test);
+
+// class Zombi extends User {
+//   constructor({
+//     name,
+//     age,
+//     location,
+//     poison,
+//   }) {
+//     super({
+//       name,
+//       age,
+//       location,
+//     });
+//     this.poison = poison;
+//   }
+//   toBite() {
+//     console.log(
+//       `Bite with ${this.poison}`
+//     );
+//   }
+// }
+
+// const test2 = new Zombi({
+//   name: 'Zombi',
+//   age: 900,
+//   location: 'Zombi lend',
+//   poison: 500,
+// });
+
+// console.log(test2);
+
 // ___________________________________________________________
 
 // class Admin {
@@ -305,3 +336,36 @@ console.log('❤️');
 // console.table(userAlex);
 // console.table(userSv);
 // ___________________________________________________________
+
+class Blogger {
+  constructor({
+    email,
+    age,
+    numberOfPosts,
+    topics,
+  }) {
+    this.email = email;
+    this.age = age;
+    this.numberOfPosts = numberOfPosts;
+    this.topics = topics;
+  }
+  getInfo() {
+    return `User ${this.email} is ${this.age} years old and has ${this.numberOfPosts} posts.`;
+  }
+  updatePostCount(value) {
+    this.numberOfPosts += value;
+  }
+}
+
+const mango = new Blogger({
+  name: 'mango@gmail.com',
+  age: 24,
+  numberOfPosts: 20,
+  topics: ['tech', 'cooking'],
+});
+
+console.log(mango.getInfo());
+
+mango.updatePostCount(5);
+
+console.log(mango.getInfo());
