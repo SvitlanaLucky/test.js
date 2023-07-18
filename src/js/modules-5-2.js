@@ -337,35 +337,124 @@ console.log('❤️');
 // console.table(userSv);
 // ___________________________________________________________
 
-class Blogger {
-  constructor({
-    email,
-    age,
-    numberOfPosts,
-    topics,
-  }) {
-    this.email = email;
-    this.age = age;
-    this.numberOfPosts = numberOfPosts;
-    this.topics = topics;
-  }
-  getInfo() {
-    return `User ${this.email} is ${this.age} years old and has ${this.numberOfPosts} posts.`;
-  }
-  updatePostCount(value) {
-    this.numberOfPosts += value;
-  }
-}
+// class Blogger {
+//   constructor({
+//     email,
+//     age,
+//     numberOfPosts,
+//     topics,
+//   }) {
+//     this.email = email;
+//     this.age = age;
+//     this.numberOfPosts = numberOfPosts;
+//     this.topics = topics;
+//   }
+//   getInfo() {
+//     return `User ${this.email} is ${this.age} years old and has ${this.numberOfPosts} posts.`;
+//   }
+//   updatePostCount(value) {
+//     this.numberOfPosts += value;
+//   }
+// }
 
-const mango = new Blogger({
-  name: 'mango@gmail.com',
-  age: 24,
-  numberOfPosts: 20,
-  topics: ['tech', 'cooking'],
-});
+// const mango = new Blogger({
+//   name: 'mango@gmail.com',
+//   age: 24,
+//   numberOfPosts: 20,
+//   topics: ['tech', 'cooking'],
+// });
 
-console.log(mango.getInfo());
+// console.log(mango.getInfo());
 
-mango.updatePostCount(5);
+// mango.updatePostCount(5);
 
-console.log(mango.getInfo());
+// console.log(mango.getInfo());
+// _______________________________________________________________________________
+
+// class Storage {
+//   constructor(items) {
+//     this.items = items;
+//   }
+
+//   getItems() {
+//     return this.items;
+//   }
+
+//   addItem(item) {
+//     if (!this.items.includes(item)) {
+//       this.items.push(item);
+//       return;
+//     }
+//     return 'We have this storage';
+//   }
+
+//   removeItem(item) {
+//     const idx =
+//       this.items.indexOf(item);
+//     if (!!~idx) {
+//       this.items.splice(idx, 1);
+//     }
+//   }
+// }
+
+// const storage = new Storage([
+//   '🍎',
+//   '🍋',
+//   '🥝',
+// ]);
+
+// const items = storage.getItems();
+// console.table(items);
+
+// storage.addItem('🍌');
+// console.table(storage.items);
+
+// storage.removeItem('🍋');
+// console.table(storage.items);
+// ____________________________________________________________________________
+
+// class User {
+//   #login;
+//   #email;
+//   constructor({ login, email }) {
+//     this.#login = login;
+//     this.#email = email;
+//   }
+
+//   get login() {
+//     return this.#login;
+//   }
+//   set login(newLogin) {
+//     if (this.#login !== newLogin) {
+//       this.#login = newLogin;
+//     }
+//   }
+
+//   get email() {
+//     return this.#email;
+//   }
+//   set email(newEmail) {
+//     if (this.#email !== newEmail) {
+//       this.#email = newEmail;
+//     }
+//   }
+// }
+
+// const mango = new User({
+//   login: 'Mango',
+//   email: 'mango@gmail.com',
+// });
+
+// console.log(mango.login);
+// mango.login = 'mangodog';
+// console.log(mango.login);
+
+// const poly = new User({
+//   login: 'Poly',
+//   email: 'poly@gmail.com',
+// });
+
+// console.log(poly.login);
+// poly.login = 'polycat';
+// console.log(poly.login);
+// _________________________________________________________________________________
