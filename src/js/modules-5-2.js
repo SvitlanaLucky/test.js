@@ -458,3 +458,57 @@ console.log('❤️');
 // poly.login = 'polycat';
 // console.log(poly.login);
 // _________________________________________________________________________________
+
+// class Cat {
+//   constructor({ name, legs }) {
+//     this.name = name;
+//     this.legs = legs;
+//   }
+//   sayHello() {
+//     console.log(`Hello ${this.name}`);
+//   }
+// }
+
+// const brokk = new Cat({
+//   name: 'Brokk',
+//   legs: 4,
+// });
+
+// console.log(brokk);
+// brokk.sayHello();
+// ______________________________________________________________________________
+
+// const myObject = {
+//   o: 5,
+// };
+
+// console.log(
+//   myObject.__proto__ ===
+//     Object.prototype
+// );
+// _______________________________________________________________________________
+
+// const makeChangeColor = function name(
+//   params
+// ) {
+//   const changeColor = function (color) {
+//     console.log(
+//       'changeColor -> this',
+//       this
+//     );
+//   };
+
+//   const sweater = {
+//     color: 'teal',
+//   };
+
+//   console.log(sweater);
+
+//   sweater.updateColor = changeColor;
+
+//   return sweater.updateColor;
+// };
+
+// const sweatColor = makeChangeColor();
+// sweatColor('blue');
+// _______________________________________________________________________________
