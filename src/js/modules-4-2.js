@@ -216,3 +216,85 @@ const cars = [
 
 // console.log(value, myArr);
 // ___________________________________________________________________
+
+// 10/48
+
+// const calculateTotalPrice = (
+//   orderedItems
+// ) => {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach((item, i) => {
+//     totalPrice += item;
+//   });
+
+//   return totalPrice;
+// };
+// _______________________________________________________________________________
+
+// 11/48
+
+// const filterArray = (
+//   numbers,
+//   value
+// ) => {
+//   const filteredNumbers = [];
+
+//   numbers.forEach((number, index) => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   return filteredNumbers;
+// };
+// ____________________________________________________________________________
+
+// 12/48
+
+// const getCommonElements = (
+//   firstArray,
+//   secondArray
+// ) => {
+//   const commonElements = [];
+
+//   firstArray.forEach((element, idx) => {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   });
+//   return commonElements;
+// };
+// _______________________________________________________________________
+
+// 13/48
+
+// const changeEven = (numbers, value) => {
+//   const newNumbers = [];
+
+//   numbers.forEach((element) => {
+//     if (element % 2 === 0) {
+//       newNumbers.push(element + value);
+//     } else {
+//       newNumbers.push(element);
+//     }
+//   });
+//   return newNumbers;
+// };
+// _______________________________________________________________________________
+
+// 14/48
+
+// const planets = [
+//   'Earth',
+//   'Mars',
+//   'Venus',
+//   'Jupiter',
+// ];
+
+// const planetsLengths = planets.map(
+//   (planet) => planet.length
+// );
+
+// console.log(planetsLengths);
+// ______________________________________________________________________________
