@@ -32,19 +32,36 @@
 //   console.log('event.key: ', event.key);
 // }
 // __________________________________________________________________________________
-const title = document.querySelector(
-  '.js-title'
-);
+// const title = document.querySelector(
+//   '.js-title'
+// );
 
-title.textContent = 'Hello JS';
-console.dir(title.textContent);
+// title.textContent = 'Hello JS';
+// console.dir(title.textContent);
 
-title.classList.add('title-color');
-title.classList.remove('title-color');
-title.classList.toggle('title-color');
-title.classList.toggle('title-color');
+// title.classList.add('title-color');
+// title.classList.remove('title-color');
+// title.classList.toggle('title-color');
+// title.classList.toggle('title-color');
 
-title.style.color = 'green';
+// title.style.color = 'green';
 
-console.dir(title);
+// console.dir(title.dataset.id);
+
+// title.hidden = false;
+
+// console.log(title);
+
+// console.dir(
+//   title.getAttribute('hidden')
+// );
+// title.removeAttribute('hidden');
+// title.setAttribute('hidden');
 // ______________________________________________________________________________
+
+// const list =
+//   document.querySelector('.js-list');
+
+// console.dir(list.children);
+// console.log([...list.children]);
+// ______________________________________________________________________
