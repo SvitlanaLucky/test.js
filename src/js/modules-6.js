@@ -65,3 +65,39 @@
 // console.dir(list.children);
 // console.log([...list.children]);
 // ______________________________________________________________________
+
+// const li = document.createElement('li');
+// li.textContent =
+//   list.children.length + 1;
+// li.classList.add('title-color');
+// li.dataset.id = '1234';
+// const div =
+//   document.createElement('div');
+// const h2 = document.createElement('h2');
+// h2.textContent = 'hello';
+// li.append(div);
+// div.append(h2);
+// list.append(li);
+
+// list.append(li);
+// console.dir(li);
+
+// const li = `<li class = 'title-color' data-id = '1234'>${
+//   list.children.length + 1
+// }
+//     <div>
+// <h2>hello</h2>
+// </div></li>`;
+// list.insertAdjacentHTML(
+//   'beforeend',
+//   li
+// );
+// ________________________________________________________________
+
+const listStatic =
+  document.querySelectorAll('li');
+const listDynamics =
+  document.getElementsByTagName('li');
+
+console.log('Static: ', listStatic);
+console.log('Dynamic: ', listDynamics);
