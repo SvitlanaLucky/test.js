@@ -94,10 +94,75 @@
 // );
 // ________________________________________________________________
 
-const listStatic =
-  document.querySelectorAll('li');
-const listDynamics =
-  document.getElementsByTagName('li');
+// const listStatic =
+//   document.querySelectorAll('li');
+// const listDynamics =
+//   document.getElementsByTagName('li');
 
-console.log('Static: ', listStatic);
-console.log('Dynamic: ', listDynamics);
+// console.log('Static: ', listStatic);
+// console.log('Dynamic: ', listDynamics);
+// _________________________________________________________________________
+
+// const cars = [
+//   {
+//     id: 1,
+//     model: 'Honda',
+//     type: 'Civic',
+//     price: 120000,
+//     img: 'https://cdn2.riastatic.com/photosnew/auto/photo/honda_civic__510691787f.webp',
+//   },
+//   {
+//     id: 2,
+//     model: 'Audi',
+//     type: 'Q7',
+//     price: 40000,
+//     img: 'https://cdn1.riastatic.com/photosnew/auto/photo/audi_q7__508873771bx.webp',
+//   },
+//   {
+//     id: 3,
+//     model: 'BMW',
+//     type: '5 siries',
+//     price: 9000,
+//     img: 'https://cdn0.riastatic.com/photosnew/auto/photo/bmw_5-series__507762095bx.webp',
+//   },
+//   {
+//     id: 4,
+//     model: 'Volvo',
+//     type: 'XC60',
+//     price: 7000,
+//     img: 'https://cdn.riastatic.com/photosnewr/auto/new_auto_storage/volvo-xc60__2006476-341x224x60.webp',
+//   },
+// ];
+
+// const container =
+//   document.querySelector(
+//     '.js-container'
+//   );
+// const markup = cars
+//   .map(
+//     ({
+//       id = 'none',
+//       model,
+//       type,
+//       price,
+//       img,
+//     }) => `<li data-id='${id}'>
+//     <img src="${img}" alt="${model}" class = "img">
+//     <h2>Марка - ${model}</h2>
+//     <h3>Модель - ${type}</h3>
+//     <p>Ціна - ${price}</p>
+//     </li>`
+//   )
+//   .join('');
+
+// container.insertAdjacentHTML(
+//   'beforeend',
+//   markup
+// );
+
+// const containerAfter =
+//   document.querySelector(
+//     '.js-container'
+//   );
+// containerAfter.innerHTML = '';
+// _____________________________________________________________________________________
