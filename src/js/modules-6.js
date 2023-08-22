@@ -166,3 +166,68 @@
 //   );
 // containerAfter.innerHTML = '';
 // _____________________________________________________________________________________
+const button = document.querySelector(
+  '.js-click'
+);
+const container =
+  document.querySelector(
+    '.js-container'
+  );
+button.addEventListener(
+  'click',
+  onClick
+);
+container.addEventListener(
+  'click',
+  onClick
+);
+
+let step = 0;
+
+function onClick(event) {
+  step += 10;
+  container.style.marginLeft = `${step}px`;
+  container.style.marginTop = `${step}px`;
+  console.log(event.currentTarget);
+}
+// __________________________________________________________________________
+
+// const title = document.querySelector('.js-title');
+
+// const maxLength = 20;
+// const totalLength = maxLength + 3;
+
+// title.addEventListener('click', onClick);
+
+// function onClick(event) {
+//   const title = event.currentTarget;
+//   const str = title.textContent.slice(0, maxLength);
+
+//   if (title.textContent.length > totalLength) {
+//     const remainder = title.textContent.slice(maxLength);
+
+//     title.setAttribute('data-title', remainder);
+//     title.textContent = str + '...';
+//   } else {
+//     const remainder = title.dataset.title;
+//     title.textContent = str + remainder;
+//     console.log(remainder)
+//   }
+// }
+// ________________________________________________________________________________
+
+// const userName = document.querySelector('.js-input')
+
+// userName.addEventListener('input', onInput)
+
+// function onInput(event) {
+//   console.dir(event.currentTarget.value)
+// }
+// ______________________________________________________________________________
+
+const formEl = document.querySelector('.js-form');
+formEl.addEventListener('submit', onSubmit)
+
+function onSubmit(event) {
+  event.preventDefault()
+}
