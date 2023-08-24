@@ -29,3 +29,7 @@ ul {
 .form {
     margin-bottom: 5px;
 }
+
+.tog {
+    display: none;
+}

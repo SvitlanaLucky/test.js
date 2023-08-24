@@ -1,16 +1,12 @@
 // const titleEl =
 //   document.createElement('h1');
-
 // titleEl.classList.add('page-title');
 // titleEl.textContent = 'Це заголовок ';
-
 // titleEl.insertAdjacentHTML(
 //   'beforeend',
 //   'hello'
 // );
-
 // console.log(titleEl);
-
 // document.body.appendChild(titleEl);
 // console.log(document.body);
 // __________________________________________________________________________
@@ -22,12 +18,10 @@
 //     '.js-clear'
 //   ),
 // };
-
 // window.addEventListener(
 //   'keydown',
 //   onKeydown
 // );
-
 // function onKeydown(event) {
 //   console.log('event.key: ', event.key);
 // }
@@ -35,37 +29,27 @@
 // const title = document.querySelector(
 //   '.js-title'
 // );
-
 // title.textContent = 'Hello JS';
 // console.dir(title.textContent);
-
 // title.classList.add('title-color');
 // title.classList.remove('title-color');
 // title.classList.toggle('title-color');
 // title.classList.toggle('title-color');
-
 // title.style.color = 'green';
-
 // console.dir(title.dataset.id);
-
 // title.hidden = false;
-
 // console.log(title);
-
 // console.dir(
 //   title.getAttribute('hidden')
 // );
 // title.removeAttribute('hidden');
 // title.setAttribute('hidden');
 // ______________________________________________________________________________
-
 // const list =
 //   document.querySelector('.js-list');
-
 // console.dir(list.children);
 // console.log([...list.children]);
 // ______________________________________________________________________
-
 // const li = document.createElement('li');
 // li.textContent =
 //   list.children.length + 1;
@@ -78,10 +62,8 @@
 // li.append(div);
 // div.append(h2);
 // list.append(li);
-
 // list.append(li);
 // console.dir(li);
-
 // const li = `<li class = 'title-color' data-id = '1234'>${
 //   list.children.length + 1
 // }
@@ -93,16 +75,13 @@
 //   li
 // );
 // ________________________________________________________________
-
 // const listStatic =
 //   document.querySelectorAll('li');
 // const listDynamics =
 //   document.getElementsByTagName('li');
-
 // console.log('Static: ', listStatic);
 // console.log('Dynamic: ', listDynamics);
 // _________________________________________________________________________
-
 // const cars = [
 //   {
 //     id: 1,
@@ -133,7 +112,6 @@
 //     img: 'https://cdn.riastatic.com/photosnewr/auto/new_auto_storage/volvo-xc60__2006476-341x224x60.webp',
 //   },
 // ];
-
 // const container =
 //   document.querySelector(
 //     '.js-container'
@@ -154,112 +132,35 @@
 //     </li>`
 //   )
 //   .join('');
-
 // container.insertAdjacentHTML(
 //   'beforeend',
 //   markup
 // );
-
 // const containerAfter =
 //   document.querySelector(
 //     '.js-container'
 //   );
 // containerAfter.innerHTML = '';
 // _____________________________________________________________________________________
-// const button = document.querySelector(
-//   '.js-click'
-// );
-// const container =
-//   document.querySelector(
-//     '.js-container'
-//   );
-// button.addEventListener(
-//   'click',
-//   onClick
-// );
-// container.addEventListener(
-//   'click',
-//   onClick
-// );
-
-// let step = 0;
-
-// function onClick(event) {
-//   step += 10;
-//   container.style.marginLeft = `${step}px`;
-//   container.style.marginTop = `${step}px`;
-//   console.log(event.currentTarget);
-// }
-// __________________________________________________________________________
-
-// const title = document.querySelector('.js-title');
-
-// const maxLength = 20;
-// const totalLength = maxLength + 3;
-
-// title.addEventListener('click', onClick);
-
-// function onClick(event) {
-//   const title = event.currentTarget;
-//   const str = title.textContent.slice(0, maxLength);
-
-//   if (title.textContent.length > totalLength) {
-//     const remainder = title.textContent.slice(maxLength);
-
-//     title.setAttribute('data-title', remainder);
-//     title.textContent = str + '...';
-//   } else {
-//     const remainder = title.dataset.title;
-//     title.textContent = str + remainder;
-//     console.log(remainder)
-//   }
-// }
-// ________________________________________________________________________________
-
-// const userName = document.querySelector('.js-input')
-
-// userName.addEventListener('input', onInput)
-
-// function onInput(event) {
-//   console.dir(event.currentTarget.value)
-// }
-// ______________________________________________________________________________
-// форма з даними
-
-// const formEl = document.querySelector('.js-form');
-// formEl.addEventListener('submit', onSubmit);
-
-// function onSubmit(event) {
-//   event.preventDefault();
-
-//   const {userName, userEmail, userAge} = event.currentTarget.elements;
-
-//   const data = {
-//     name: userName.value,
-//     email: userEmail.value,
-//     age: userAge.value,
-//   };
-
-//   console.log(data);
-// }
-// _______________________________________________________________________________
-// події клавіатури
-
-const container = document.querySelector('.js-container');
-
-document.addEventListener('keydown', onKey);
-
-function onKey(event) {
-  console.log(event);
-  // if(event.code === 'Escape' || event.code === 'Enter') {
-  //   container.classList.toggle('tog');
-  // };
-;
-
-  if(event.ctrlKey && (event.code === 'KeyC')) {
-    event.preventDefault()
-    alert('КОПІЮЄШ, паскуда?!');
-  };
-};
-
-
+const button = document.querySelector(
+  '.js-click'
+);
+const container =
+  document.querySelector(
+    '.js-container'
+  );
+button.addEventListener(
+  'click',
+  onClick
+);
+container.addEventListener(
+  'click',
+  onClick
+);
+let step = 0;
+function onClick(event) {
+  step += 10;
+  container.style.marginLeft = `${step}px`;
+  container.style.marginTop = `${step}px`;
+  console.log(event.currentTarget);
+}
