@@ -101,8 +101,7 @@
 
 // console.log('Static: ', listStatic);
 // console.log('Dynamic: ', listDynamics);
-// _________________________________________________________________________
-
+// _______________________________завдання масив машинок____________________________
 // const cars = [
 //   {
 //     id: 1,
@@ -223,8 +222,7 @@
 // function onInput(event) {
 //   console.dir(event.currentTarget.value)
 // }
-// ______________________________________________________________________________
-// форма з даними
+// _________________________________форма з даними_____________________________________________
 
 // const formEl = document.querySelector('.js-form');
 // formEl.addEventListener('submit', onSubmit);
@@ -242,24 +240,112 @@
 
 //   console.log(data);
 // }
-// _______________________________________________________________________________
-// події клавіатури
+// _________________________________події клавіатури____________________________________________
 
-const container = document.querySelector('.js-container');
+// const container = document.querySelector('.js-container');
 
-document.addEventListener('keydown', onKey);
+// document.addEventListener('keydown', onKey);
 
-function onKey(event) {
-  console.log(event);
-  // if(event.code === 'Escape' || event.code === 'Enter') {
-  //   container.classList.toggle('tog');
-  // };
-;
+// function onKey(event) {
+//   console.log(event);
+// if(event.code === 'Escape' || event.code === 'Enter') {
+//   container.classList.toggle('tog');
+// };
+// ;
 
-  if(event.ctrlKey && (event.code === 'KeyC')) {
-    event.preventDefault()
-    alert('КОПІЮЄШ, паскуда?!');
-  };
-};
+//   if(event.ctrlKey && (event.code === 'KeyC')) {
+//     event.preventDefault()
+//     alert('КОПІЮЄШ, паскуда?!');
+//   };
+// };
+// _______________________________завдання масив машинок_______________________________
 
+const cars = [
+  {
+    id: 1,
+    model: 'Honda',
+    type: 'Civic',
+    price: 120000,
+    img: 'https://cdn2.riastatic.com/photosnew/auto/photo/honda_civic__510691787f.webp',
+  },
+  {
+    id: 2,
+    model: 'Audi',
+    type: 'Q7',
+    price: 40000,
+    img: 'https://cdn1.riastatic.com/photosnew/auto/photo/audi_q7__508873771bx.webp',
+  },
+  {
+    id: 3,
+    model: 'BMW',
+    type: '5 siries',
+    price: 9000,
+    number: '+380000000',
+    img: 'https://cdn0.riastatic.com/photosnew/auto/photo/bmw_5-series__507762095bx.webp',
+  },
+  {
+    id: 4,
+    model: 'Volvo',
+    type: 'XC60',
+    price: 7000,
+    img: 'https://cdn.riastatic.com/photosnewr/auto/new_auto_storage/volvo-xc60__2006476-341x224x60.webp',
+  },
+];
 
+const list =
+  document.querySelector('.js-list');
+const form = document.querySelector(
+  '.js-search-form'
+);
+
+form.addEventListener(
+  'submit',
+  onSearch
+);
+
+function createMarkup(arr) {
+  return arr
+    .map(
+      ({
+        id,
+        model,
+        type,
+        price,
+        number,
+        img,
+      }) =>
+        `<li data-id = '${id}'><img src="${img}" alt="${model}" width = '130'>
+    <h2>${model}</h2>
+    <h3>${type}</h3>
+    <p>${price}</p>
+  </li>`
+    )
+    .join('');
+}
+
+list.insertAdjacentHTML(
+  'beforeend',
+  createMarkup(cars)
+);
+
+function onSearch(event) {
+  event.preventDefault();
+  const form = event.currentTarget;
+
+  const { query, select } =
+    form.elements;
+
+  const searchCars = cars.filter(
+    (item) =>
+      item[
+        select.value
+      ].toLowerCase() ===
+      query.value.trim().toLowerCase()
+  );
+  list.innerHTML =
+    createMarkup(searchCars);
+
+  // console.dir(query.value);
+  // console.dir(select.value);
+}
+// _________________________________________________________________________________
