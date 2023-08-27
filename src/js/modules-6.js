@@ -343,7 +343,15 @@ function onSearch(event) {
 
 function onClick(event) { 
   if(event.target.classList.contains('js-favorite')) {
-    const {id} = event.target.closest('li').dataset{id: };
+    event.target.classList.add('js-favorite-active');
+    const {id} = event.target.closest('li').dataset;
+    
+    const {model, type} = cars.find(({id: carId}) => carId === Number(id));
+    addFavorite(`${model} ${type}`);
   }
+}
+
+function addFavorite(currentCar) {
+   favoriteList.insertAdjacentHTML('beforeend', `<li>${currentCar}</li>`);
 }
 // _________________________________________________________________________________
