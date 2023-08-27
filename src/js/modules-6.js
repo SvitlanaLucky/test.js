@@ -292,16 +292,12 @@ const cars = [
   },
 ];
 
-const list =
-  document.querySelector('.js-list');
-const form = document.querySelector(
-  '.js-search-form'
-);
+const list = document.querySelector('.js-list');
+const form = document.querySelector('.js-search-form');
+const favoriteList = document.querySelector('.js-favorite-list');
 
-form.addEventListener(
-  'submit',
-  onSearch
-);
+form.addEventListener('submit', onSearch);
+list.addEventListener('click', onClick);
 
 function createMarkup(arr) {
   return arr
@@ -314,7 +310,9 @@ function createMarkup(arr) {
         number,
         img,
       }) =>
-        `<li data-id = '${id}'><img src="${img}" alt="${model}" width = '130'>
+        `<li data-id = '${id}'>
+        <img src="${img}" alt="${model}" width = '130'>
+        <div class= 'js-favorite'>❤️</div>
     <h2>${model}</h2>
     <h3>${type}</h3>
     <p>${price}</p>
@@ -323,10 +321,7 @@ function createMarkup(arr) {
     .join('');
 }
 
-list.insertAdjacentHTML(
-  'beforeend',
-  createMarkup(cars)
-);
+list.insertAdjacentHTML('beforeend', createMarkup(cars));
 
 function onSearch(event) {
   event.preventDefault();
@@ -344,8 +339,11 @@ function onSearch(event) {
   );
   list.innerHTML =
     createMarkup(searchCars);
+}
 
-  // console.dir(query.value);
-  // console.dir(select.value);
+function onClick(event) { 
+  if(event.target.classList.contains('js-favorite')) {
+    const {id} = event.target.closest('li').dataset{id: };
+  }
 }
 // _________________________________________________________________________________
