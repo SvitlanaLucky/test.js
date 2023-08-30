@@ -260,98 +260,100 @@
 // };
 // _______________________________завдання масив машинок_______________________________
 
-const cars = [
-  {
-    id: 1,
-    model: 'Honda',
-    type: 'Civic',
-    price: 120000,
-    img: 'https://cdn2.riastatic.com/photosnew/auto/photo/honda_civic__510691787f.webp',
-  },
-  {
-    id: 2,
-    model: 'Audi',
-    type: 'Q7',
-    price: 40000,
-    img: 'https://cdn1.riastatic.com/photosnew/auto/photo/audi_q7__508873771bx.webp',
-  },
-  {
-    id: 3,
-    model: 'BMW',
-    type: '5 siries',
-    price: 9000,
-    number: '+380000000',
-    img: 'https://cdn0.riastatic.com/photosnew/auto/photo/bmw_5-series__507762095bx.webp',
-  },
-  {
-    id: 4,
-    model: 'Volvo',
-    type: 'XC60',
-    price: 7000,
-    img: 'https://cdn.riastatic.com/photosnewr/auto/new_auto_storage/volvo-xc60__2006476-341x224x60.webp',
-  },
-];
+// const cars = [
+//   {
+//     id: 1,
+//     model: 'Honda',
+//     type: 'Civic',
+//     price: 120000,
+//     img: 'https://cdn2.riastatic.com/photosnew/auto/photo/honda_civic__510691787f.webp',
+//   },
+//   {
+//     id: 2,
+//     model: 'Audi',
+//     type: 'Q7',
+//     price: 40000,
+//     img: 'https://cdn1.riastatic.com/photosnew/auto/photo/audi_q7__508873771bx.webp',
+//   },
+//   {
+//     id: 3,
+//     model: 'BMW',
+//     type: '5 siries',
+//     price: 9000,
+//     number: '+380000000',
+//     img: 'https://cdn0.riastatic.com/photosnew/auto/photo/bmw_5-series__507762095bx.webp',
+//   },
+//   {
+//     id: 4,
+//     model: 'Volvo',
+//     type: 'XC60',
+//     price: 7000,
+//     img: 'https://cdn.riastatic.com/photosnewr/auto/new_auto_storage/volvo-xc60__2006476-341x224x60.webp',
+//   },
+// ];
 
-const list = document.querySelector('.js-list');
-const form = document.querySelector('.js-search-form');
-const favoriteList = document.querySelector('.js-favorite-list');
+// const list = document.querySelector('.js-list');
+// const form = document.querySelector('.js-search-form');
+// const favoriteList = document.querySelector('.js-favorite-list');
 
-form.addEventListener('submit', onSearch);
-list.addEventListener('click', onClick);
+// form.addEventListener('submit', onSearch);
+// list.addEventListener('click', onClick);
 
-function createMarkup(arr) {
-  return arr
-    .map(
-      ({
-        id,
-        model,
-        type,
-        price,
-        number,
-        img,
-      }) =>
-        `<li data-id = '${id}'>
-        <img src="${img}" alt="${model}" width = '130'>
-        <div class= 'js-favorite'>❤️</div>
-    <h2>${model}</h2>
-    <h3>${type}</h3>
-    <p>${price}</p>
-  </li>`
-    )
-    .join('');
-}
+// function createMarkup(arr) {
+//   return arr
+//     .map(
+//       ({
+//         id,
+//         model,
+//         type,
+//         price,
+//         number,
+//         img,
+//       }) =>
+//         `<li data-id = '${id}'>
+//         <img src="${img}" alt="${model}" width = '130'>
+//         <div class= 'js-favorite'>❤️</div>
+//     <h2>${model}</h2>
+//     <h3>${type}</h3>
+//     <p>${price}</p>
+//   </li>`
+//     )
+//     .join('');
+// }
 
-list.insertAdjacentHTML('beforeend', createMarkup(cars));
+// list.insertAdjacentHTML('beforeend', createMarkup(cars));
 
-function onSearch(event) {
-  event.preventDefault();
-  const form = event.currentTarget;
+// function onSearch(event) {
+//   event.preventDefault();
+//   const form = event.currentTarget;
 
-  const { query, select } =
-    form.elements;
+//   const { query, select } =
+//     form.elements;
 
-  const searchCars = cars.filter(
-    (item) =>
-      item[
-        select.value
-      ].toLowerCase() ===
-      query.value.trim().toLowerCase()
-  );
-  list.innerHTML =
-    createMarkup(searchCars);
-}
+//   const searchCars = cars.filter(
+//     (item) =>
+//       item[
+//         select.value
+//       ].toLowerCase() ===
+//       query.value.trim().toLowerCase()
+//   );
+//   list.innerHTML =
+//     createMarkup(searchCars);
+// }
 
-function onClick(event) { 
-  if(event.target.classList.contains('js-favorite')) {
-    event.target.classList.add('js-favorite-active');
-    const {id} = event.target.closest('li').dataset;
+// function onClick(event) { 
+//   if(event.target.classList.contains('js-favorite')) {
+//     event.target.classList.add('js-favorite-active');
+//     const {id} = event.target.closest('li').dataset;
     
-    const {model, type} = cars.find(({id: carId}) => carId === Number(id));
-    addFavorite(`${model} ${type}`);
-  }
-}
+//     const {model, type} = cars.find(({id: carId}) => carId === Number(id));
+//     addFavorite(`${model} ${type}`);
+//   }
+// }
 
-function addFavorite(currentCar) {
-   favoriteList.insertAdjacentHTML('beforeend', `<li>${currentCar}</li>`);
-}
+// function addFavorite(currentCar) {
+//    favoriteList.insertAdjacentHTML('beforeend', `<li>${currentCar}</li>`);
+// }
 // _________________________________________________________________________________
+
+
