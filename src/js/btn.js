@@ -17,7 +17,7 @@ let total = 0;
 btnAdd.addEventListener(
   'click',
   function () {
-    console.log('click he-he-he');
+    console.log('he-he-he');
 
     const value = Number(
       valueInput.value

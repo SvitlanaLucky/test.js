@@ -1,55 +1,37 @@
-const getItemTemplate = ({
-  isDone,
-  text,
-}) => `<li class="item">
-        <div>
-          <input type="checkbox" ${
-            isDone ? 'checked' : ''
-          }/>
-          <span>${text}</span>
-        </div>
-        <button type="button">x</button>
-      </li>`;
+import { Item } from './Item.js';
+import { items } from './items.js';
 
-const refs = {
+const refs = { 
   list: document.querySelector('.list'),
-  form: document.querySelector(
-    '.forma'
-  ),
+  form: document.querySelector('.form'),
 };
 
 const render = () => {
-  const lis = items.map((item) =>
-    getItemTemplate(item)
-  );
+  const lis = items.map(Item);
 
   refs.list.innerHTML = '';
-  refs.list.insertAdjacentHTML(
-    'beforeend',
-    lis.join('')
-  );
+  refs.list.insertAdjacentHTML('beforeend', lis.join(''));
 };
 
-const items = [
-  {
-    text: 'купити хліб',
+const addItem = (event) => {
+  event.preventDefault();
+
+  const { value } = event.target.elements.text;
+  const payload = {
+    text: value,
     isDone: false,
-  },
-  {
-    text: 'купити молоко',
-    isDone: false,
-  },
-  {
-    text: 'купити до чаю',
-    isDone: true,
-  },
-];
+  };
+
+    refs.form.reset();
+  items.push(payload);
+  render();
+}
 
 render();
 
-refs.form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    
-    console.log(event.target.elements.text.value);
-  }
-);
+refs.form.addEventListener('submit', addItem);
+
+
+
+
+

@@ -42,6 +42,10 @@ ul {
     color: gold;
 }
 
+.input_number {
+    margin-bottom: 10px;
+}
+
 .list {
     display: flex;
     flex-direction: column;
