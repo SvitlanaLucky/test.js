@@ -1,4 +1,4 @@
-import { Item } from './Item.js';
+import { getItemTemplate } from './getItemTemplate.js';
 import { items } from './items.js';
 
 const refs = { 
@@ -7,29 +7,33 @@ const refs = {
 };
 
 const render = () => {
-  const lis = items.map(Item);
+  const lis = items.map(getItemTemplate);
 
   refs.list.innerHTML = '';
   refs.list.insertAdjacentHTML('beforeend', lis.join(''));
 };
 
-const addItem = (event) => {
-  event.preventDefault();
-
-  const { value } = event.target.elements.text;
+const addItem = (text) => {
   const payload = {
-    text: value,
+    text,
     isDone: false,
   };
 
-    refs.form.reset();
   items.push(payload);
+}
+
+const handSubmit = (event) => {
+  const { value } = event.target.elements.text;
+  
+  event.preventDefault();
+  addItem(value);
   render();
+  refs.form.reset();
 }
 
 render();
 
-refs.form.addEventListener('submit', addItem);
+refs.form.addEventListener('submit', handSubmit);
 
 
 

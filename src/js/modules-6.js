@@ -354,6 +354,21 @@
 // function addFavorite(currentCar) {
 //    favoriteList.insertAdjacentHTML('beforeend', `<li>${currentCar}</li>`);
 // }
+// ________________________click_________________________________________________________
+
+// const refs = {
+//     button: document.querySelector('button'),
+// }
+
+// let size = 12;
+
+// const handleClick = (event) => {
+//     event.target.style.fontSize = `${size++}px`;
+// };
+
+// refs.button.addEventListener('click', handleClick);
 // _________________________________________________________________________________
+
+
 
 
