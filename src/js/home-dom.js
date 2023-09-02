@@ -1,9 +1,9 @@
 import { getItemTemplate } from './getItemTemplate.js';
 import { items } from './items.js';
 
-const refs = { 
+const refs = {
   list: document.querySelector('.list'),
-  form: document.querySelector('.form'),
+  form: document.querySelector('.forma'),
 };
 
 const render = () => {
@@ -20,22 +20,21 @@ const addItem = (text) => {
   };
 
   items.push(payload);
-}
+};
 
 const handSubmit = (event) => {
   const { value } = event.target.elements.text;
-  
+
   event.preventDefault();
   addItem(value);
   render();
   refs.form.reset();
-}
+};
 
 render();
 
-refs.form.addEventListener('submit', handSubmit);
+refs.form.addEventListener('submit', (event) => {
+  event.preventDefault();
 
-
-
-
-
+  console.log(event.target.elements.text.value);
+});
