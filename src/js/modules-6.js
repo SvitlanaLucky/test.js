@@ -341,11 +341,11 @@
 //     createMarkup(searchCars);
 // }
 
-// function onClick(event) { 
+// function onClick(event) {
 //   if(event.target.classList.contains('js-favorite')) {
 //     event.target.classList.add('js-favorite-active');
 //     const {id} = event.target.closest('li').dataset;
-    
+
 //     const {model, type} = cars.find(({id: carId}) => carId === Number(id));
 //     addFavorite(`${model} ${type}`);
 //   }
@@ -368,6 +368,59 @@
 
 // refs.button.addEventListener('click', handleClick);
 // _________________________________________________________________________________
+
+//_________________________________модальне вікно__________________________________
+// function getRefs() {
+//     return {
+//     openBtn: document.querySelector('.open-btn'),
+//     closeBtn: document.querySelector('.close-btn'),
+//     modal: document.querySelector('.modal'),
+//     backdrop: document.querySelector('.backdrop'),
+//   };
+// }
+
+// const refs = getRefs();
+// console.log(refs);
+
+// refs.openBtn.addEventListener('click', onButtonOpenClick);
+// refs.closeBtn.addEventListener('click', onButtonCloseClick);
+// refs.backdrop.addEventListener('click', onBackdropClick);
+
+// function onButtonOpenClick() {
+//    modalOpen();
+// }
+
+// function onButtonCloseClick() {
+//     modalClose();
+// }
+
+// function modalOpen() {
+//     refs.backdrop.classList.remove('is-hidden');
+//     window.addEventListener('keydown', onEscapePress);
+// }
+
+// function modalClose() {
+//     refs.backdrop.classList.add('is-hidden');
+//     window.removeEventListener('keydown', onEscapePress);
+// }
+
+// function onEscapePress(event) {
+//     console.dir(event);
+//     if (event.code === 'Escape') {
+//         modalClose();
+//     };
+// }
+
+
+// function onBackdropClick(event) {
+//     if(event.target === event.currentTarget) {
+//         modalClose();
+//     };
+// }
+// __________________________________________________________________________________
+
+
+
 
 
 

@@ -1,40 +1,53 @@
-import { getItemTemplate } from './getItemTemplate.js';
-import { items } from './items.js';
+// import { getItemTemplate } from './getItemTemplate.js';
+// import { items } from './items.js';
 
-const refs = {
-  list: document.querySelector('.list'),
-  form: document.querySelector('.forma'),
-};
+// const refs = {
+//   list: document.querySelector('.list'),
+//   form: document.querySelector(
+//     '.forma'
+//   ),
+// };
 
-const render = () => {
-  const lis = items.map(getItemTemplate);
+// const render = () => {
+//   const lis = items.map(
+//     getItemTemplate
+//   );
 
-  refs.list.innerHTML = '';
-  refs.list.insertAdjacentHTML('beforeend', lis.join(''));
-};
+//   refs.list.innerHTML = '';
+//   refs.list.insertAdjacentHTML(
+//     'beforeend',
+//     lis.join('')
+//   );
+// };
 
-const addItem = (text) => {
-  const payload = {
-    text,
-    isDone: false,
-  };
+// const addItem = (text) => {
+//   const payload = {
+//     text,
+//     isDone: false,
+//   };
 
-  items.push(payload);
-};
+//   items.push(payload);
+// };
 
-const handSubmit = (event) => {
-  const { value } = event.target.elements.text;
+// const handSubmit = (event) => {
+//   const { value } =
+//     event.target.elements.text;
 
-  event.preventDefault();
-  addItem(value);
-  render();
-  refs.form.reset();
-};
+//   event.preventDefault();
+//   addItem(value);
+//   render();
+//   refs.form.reset();
+// };
 
-render();
+// render();
 
-refs.form.addEventListener('submit', (event) => {
-  event.preventDefault();
+// refs.form.addEventListener(
+//   'submit',
+//   (event) => {
+//     event.preventDefault();
 
-  console.log(event.target.elements.text.value);
-});
+//     console.log(
+//       event.target.elements.text.value
+//     );
+//   }
+// );
